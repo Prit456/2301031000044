@@ -1,0 +1,83 @@
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Inder&display=swap");
+
+.robot-description-container {
+  background-color: rgba(169, 183, 214, 1);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  width: 100%;
+  padding-right: 30px;
+  padding-bottom: 124px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: flex-start;
+  font-family:
+    Inder,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400;
+}
+
+.logo-image {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 75px;
+}
+
+.robot-portrait {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 324px;
+  border-radius: 50%;
+  align-self: center;
+  margin-top: 19px;
+  max-width: 100%;
+}
+
+.robot-description {
+  margin-top: 119px;
+  margin-left: 16px;
+}
+
+@media (max-width: 991px) {
+  .robot-description-container {
+    padding-right: 20px;
+    padding-bottom: 100px;
+  }
+
+  .robot-description {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+</style>
+<main class="robot-description-container">
+  <img
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/c6f115dcbcb437201bd156b1df1bbdd4077360b33578fd0da173476f4af0d497?placeholderIfAbsent=true&apiKey=953b2d42161b4efc9bc8f3ae04805b3c"
+    alt="Logo"
+    class="logo-image"
+  />
+  <img
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/fe3a027bf57ccffb6cc003f246e4d007cbb7c1155c46b9c0c31181d32dfcc5fc?placeholderIfAbsent=true&apiKey=953b2d42161b4efc9bc8f3ae04805b3c"
+    alt="Cyberpunk robot in neon city"
+    class="robot-portrait"
+  />
+  <article class="robot-description">
+    This image depicts a futuristic, cyberpunk-style scene featuring a humanoid
+    robot or android in a neon-lit city environment.
+    <br />
+    The robot has a sleek, metallic design with a white/silver exterior and
+    glowing blue accents/circuitry patterns
+    <br />
+    running through its body.
+  </article>
+</main>

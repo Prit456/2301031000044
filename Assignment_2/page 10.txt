@@ -1,0 +1,102 @@
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Inder&display=swap");
+
+.heart-display {
+  background-color: rgba(169, 183, 214, 1);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  width: 100%;
+  padding-bottom: 65px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: stretch;
+}
+
+.image-container {
+  display: flex;
+  width: 100%;
+  padding: 0 80px 0 8px;
+  flex-direction: column;
+}
+
+.decorative-image {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 75px;
+}
+
+.heart-image {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 324px;
+  border-radius: 50%;
+  align-self: center;
+  max-width: 100%;
+}
+
+.heart-description {
+  color: rgba(0, 0, 0, 1);
+  font-size: 24px;
+  font-family:
+    Inder,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 400;
+  align-self: start;
+  margin-top: 132px;
+  margin-left: 10px;
+}
+
+@media (max-width: 991px) {
+  .image-container {
+    max-width: 100%;
+    padding-right: 20px;
+  }
+
+  .heart-description {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+</style>
+<main class="heart-display">
+  <section class="image-container">
+    <img
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/c6f115dcbcb437201bd156b1df1bbdd4077360b33578fd0da173476f4af0d497?placeholderIfAbsent=true&apiKey=953b2d42161b4efc9bc8f3ae04805b3c"
+      alt="Small decorative image"
+      class="decorative-image"
+    />
+    <img
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/cbfd0d30af168e895957b263aa0fd9d27e6d3f80b7aa0afab1198de0baaad9ec?placeholderIfAbsent=true&apiKey=953b2d42161b4efc9bc8f3ae04805b3c"
+      alt="Futuristic artificial heart"
+      class="heart-image"
+    />
+  </section>
+  <article class="heart-description">
+    Here is an AI-generated image of a
+    <br />
+    futuristic artificial heart. It features a sleek
+    <br />
+    metallic and transparent design, with
+    <br />
+    glowing blue and red circuits simulating
+    <br />
+    blood flow and electrical activity.
+    <br />
+    The heart is suspended in a high-
+    <br />
+    tech laboratory with holographic medical
+    <br />
+    data in the background, giving it a cutting-
+    <br />
+    edge, sci-fi feel. Let me know if you'd like
+    <br />
+    any modifications.
+  </article>
+</main>

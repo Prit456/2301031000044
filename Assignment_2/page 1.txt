@@ -1,0 +1,126 @@
+<style>
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container */
+.landing-container {
+  background-color: rgb(141, 185, 201);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  width: 100%;
+  padding: 149px 55px 81px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: flex-start;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+}
+
+/* Profile image */
+.profile-image {
+  aspect-ratio: 1.18;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  border-radius: 50%;
+  align-self: center;
+  max-width: 340px;
+}
+
+/* Main title */
+.main-title {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 48px;
+  font-family:
+    "Braah One",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  margin-top: 88px;
+  margin-left: 18px;
+  font-weight: 400;
+}
+
+/* Auth actions container */
+.auth-actions {
+  display: flex;
+  margin-top: 91px;
+  align-items: stretch;
+  gap: 37px;
+  font-family:
+    Itim,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 32px;
+}
+
+/* Common button styles */
+.auth-button {
+  border-radius: 20px;
+  background-color: rgb(217, 217, 217);
+  border: 3px solid rgb(0, 0, 0);
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+/* Specific button styles */
+.signup-button {
+  padding: 11px 31px 35px;
+}
+
+.login-button {
+  padding: 11px 25px 35px;
+}
+
+/* Hover states */
+.auth-button:hover {
+  background-color: rgb(200, 200, 200);
+}
+
+/* Focus states for accessibility */
+.auth-button:focus {
+  outline: 2px solid rgb(0, 0, 0);
+  outline-offset: 2px;
+}
+
+</style>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Powered Art Critique</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Braah+One&family=Itim&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="landing-container">
+      <img
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/a34c18f1b04c0d7c7c15a3da81c6f68d3108f98e1bc48200f738de4603938964?placeholderIfAbsent=true&apiKey=953b2d42161b4efc9bc8f3ae04805b3c"
+        alt="AI Art Critique"
+        class="profile-image"
+      />
+      <h1 class="main-title">AI Powered Art<br />Critique</h1>
+      <nav class="auth-actions">
+        <button class="auth-button signup-button">SIGN IN</button>
+        <button class="auth-button login-button">LOG IN</button>
+      </nav>
+    </main>
+  </body>
+</html>

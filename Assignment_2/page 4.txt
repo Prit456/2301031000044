@@ -1,0 +1,99 @@
+<style>
+.gallery-container {
+  background-color: rgba(187, 138, 130, 1);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  width: 100%;
+  padding: 104px 54px;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.gallery-image {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 150px;
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+.gallery-image-left {
+  z-index: 10;
+}
+
+.gallery-image-right {
+  align-self: end;
+  margin-top: -150px;
+}
+
+.gallery-image-spaced {
+  margin-top: 125px;
+}
+
+.gallery-image-overlap {
+  z-index: 10;
+}
+
+.gallery-image-spaced-2 {
+  z-index: 10;
+  margin-top: 114px;
+}
+
+@media (max-width: 991px) {
+  .gallery-container {
+    padding: 100px 20px;
+  }
+
+  .gallery-image-right {
+    margin-right: 9px;
+  }
+
+  .gallery-image-spaced {
+    margin-top: 40px;
+  }
+
+  .gallery-image-overlap {
+    margin-right: 10px;
+  }
+
+  .gallery-image-spaced-2 {
+    margin-left: 5px;
+    margin-top: 40px;
+  }
+}
+</style>
+<section class="gallery-container">
+  <img
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/abb29dece4d48ffd589465aa9a57ae59122249489b20212ccf6874dcf9c29e6e?placeholderIfAbsent=true&apiKey=953b2d42161b4efc9bc8f3ae04805b3c"
+    alt="Gallery image 1"
+    class="gallery-image gallery-image-left"
+  />
+  <img
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/cee1748aa16901e99feca16085fbb50029419d0f3aa2f086f813ed28a7756989?placeholderIfAbsent=true&apiKey=953b2d42161b4efc9bc8f3ae04805b3c"
+    alt="Gallery image 2"
+    class="gallery-image gallery-image-right"
+  />
+  <img
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/20081844ef6e1331d3b2d21217e1512876f7b56785c90dd2751f20108add34ee?placeholderIfAbsent=true&apiKey=953b2d42161b4efc9bc8f3ae04805b3c"
+    alt="Gallery image 3"
+    class="gallery-image gallery-image-left gallery-image-spaced"
+  />
+  <img
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/bbee866d7bcf1e6765c3f0496fdb76558bfbd76e5397d4fc5f7a707879b6e647?placeholderIfAbsent=true&apiKey=953b2d42161b4efc9bc8f3ae04805b3c"
+    alt="Gallery image 4"
+    class="gallery-image gallery-image-right gallery-image-overlap"
+  />
+  <img
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/11c0e87e254c20d9c6287a356e282a20198249b6292735f435a584d114eb8604?placeholderIfAbsent=true&apiKey=953b2d42161b4efc9bc8f3ae04805b3c"
+    alt="Gallery image 5"
+    class="gallery-image gallery-image-left gallery-image-spaced-2"
+  />
+  <img
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/46500fe4a1d1b7c37b6a373c63cae746caf806945bdff7a5fa1a879fa9aa6267?placeholderIfAbsent=true&apiKey=953b2d42161b4efc9bc8f3ae04805b3c"
+    alt="Gallery image 6"
+    class="gallery-image gallery-image-right gallery-image-overlap"
+  />
+</section>

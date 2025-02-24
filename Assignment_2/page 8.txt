@@ -1,0 +1,97 @@
+<style>
+.landscape-container {
+  background-color: rgba(169, 183, 214, 1);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  width: 100%;
+  padding: 0 29px 66px 8px;
+  overflow: hidden;
+}
+
+.image-group {
+  display: flex;
+  width: 100%;
+  max-width: 399px;
+  align-items: flex-start;
+}
+
+.decorative-image {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 75px;
+  align-self: start;
+  flex-shrink: 0;
+}
+
+.circular-image {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: fit-content;
+  border-radius: 50%;
+  align-self: flex-end;
+  margin-top: 66px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+}
+
+.landscape-description {
+  color: rgba(0, 0, 0, 1);
+  font-size: 24px;
+  font-family:
+    Inder,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 400;
+  margin-top: 148px;
+}
+
+@media (max-width: 991px) {
+  .landscape-container {
+    padding-right: 20px;
+  }
+
+  .circular-image {
+    margin-top: 40px;
+  }
+
+  .landscape-description {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+</style>
+<main class="landscape-container">
+  <section class="image-group">
+    <img
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/c6f115dcbcb437201bd156b1df1bbdd4077360b33578fd0da173476f4af0d497?placeholderIfAbsent=true&apiKey=953b2d42161b4efc9bc8f3ae04805b3c"
+      class="decorative-image"
+      alt="Decorative mountain landscape element"
+    />
+    <img
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/7fea4b3cb65be824b72983579cf8a0805e36b08481d48e63557293b5aaa7dc20?placeholderIfAbsent=true&apiKey=953b2d42161b4efc9bc8f3ae04805b3c"
+      class="circular-image"
+      alt="Circular mountain view"
+    />
+  </section>
+  <article class="landscape-description">
+    The scene is set in what looks like a mountainous, snowcovered landscape
+    <br />
+    with jagged peaks and icy formations.
+    <br />
+    There are falling snowflakes or stars
+    <br />
+    scattered throughout the image, adding
+    <br />
+    to the magical atmosphere.
+    <br />
+    The lighting is dramatic, with the moon's glow creating a luminous effect
+    that highlights the wolf's fur and the surrounding landscape.
+  </article>
+</main>
+

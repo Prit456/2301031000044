@@ -1,0 +1,89 @@
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Inder&display=swap");
+
+.ai-generator-container {
+  background-color: rgba(169, 183, 214, 1);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  width: 100%;
+  padding-bottom: 126px;
+  overflow: hidden;
+  font-family:
+    Inder,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400;
+}
+
+.icon-image {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 75px;
+}
+
+.content-wrapper {
+  display: flex;
+  margin-top: 24px;
+  width: 100%;
+  padding: 0 50px 0 18px;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.generated-image {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 324px;
+  border-radius: 50%;
+  align-self: center;
+  max-width: 100%;
+}
+
+.description-text {
+  margin-top: 119px;
+}
+
+@media (max-width: 991px) {
+  .ai-generator-container {
+    padding-bottom: 100px;
+  }
+
+  .content-wrapper {
+    max-width: 100%;
+    padding-right: 20px;
+  }
+
+  .description-text {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+</style>
+<main class="ai-generator-container">
+  <img
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/c6f115dcbcb437201bd156b1df1bbdd4077360b33578fd0da173476f4af0d497?placeholderIfAbsent=true&apiKey=953b2d42161b4efc9bc8f3ae04805b3c"
+    class="icon-image"
+    alt="AI Generator Icon"
+  />
+  <section class="content-wrapper">
+    <img
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/d53f70d19c36775777801408e1b72ef9f1c6edf472742fb79c3b4310200d2f1d?placeholderIfAbsent=true&apiKey=953b2d42161b4efc9bc8f3ae04805b3c"
+      class="generated-image"
+      alt="AI Generated Result"
+    />
+    <p class="description-text">
+      The image conveys the concept of how AI generates images based on textual
+      input, emphasizing a sleek and modern digital experience.
+      <br />
+      <br />
+      Let me know if you need a different representation or modifications!
+    </p>
+  </section>
+</main>
